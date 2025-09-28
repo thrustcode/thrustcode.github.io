@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThrustCode | Coming Soon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* CSS Reset and Basic Setup */
+        :root {
+            --dark-navy: #0A192F;
+            --light-grey: #A8B2D1;
+            --accent-teal: #64FFDA;
+            --card-navy: #112240;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark-navy);
+            color: var(--light-grey);
+            font-family: 'Inter', sans-serif;
+            display: grid;
+            place-items: center;
+            text-align: center;
+        }
+
+        /* Main container for content */
+        .container {
+            max-width: 600px;
+            padding: 2rem;
+        }
+
+        /* SVG Logo Styling and Animation */
+        .logo-symbol {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1.5rem;
+            /* Adjusted margin */
+            animation: pulse 2.5s infinite cubic-bezier(0.4, 0, 0.6, 1);
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.7;
+                transform: scale(0.95);
+            }
+        }
+
+        /* Typography */
+        .brand-name {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1.2rem;
+            color: var(--light-grey);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            opacity: 0.9;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            color: #FFFFFF;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            opacity: 0.8;
+            margin-bottom: 2.5rem;
+        }
+
+        h1 span {
+            color: var(--accent-teal);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .brand-name {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <svg class="logo-symbol" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 80L50 20L80 80L50 65L20 80Z" stroke="#64FFDA" stroke-width="5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path d="M50 20L50 65" stroke="#A8B2D1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+        <h2 class="brand-name">ThrustCode</h2>
+
+        <h1>Our new digital home is under <span>construction.</span></h1>
+
+        <p>
+            We are meticulously crafting a new online experience to showcase our passion for building reliable, useful
+            software that gives you more time for what matters. Stay tuned.
+        </p>
+    </div>
+
+</body>
+
+</html>
